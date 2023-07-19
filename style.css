@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: "Orbitron", sans-serif;
-  /* font-family: "Lobster", cursive; */
 }
 
 nav {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   background: #fff;
@@ -55,7 +55,7 @@ nav {
 
 .Follow img {
   background: none;
-  margin-left: 10px; /* Add some space between the link text and the social media icons */
+  margin-left: 10px;
 }
 .Banner {
   display: flex;
@@ -68,7 +68,7 @@ nav {
 .Banner-Title-1st {
   color: #0b0223;
   text-align: left;
-  font-family: Work Sans;
+
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -77,8 +77,8 @@ nav {
 }
 
 .Banner-Title-2nd {
-  text-align: center;
-
+  font-family: "Lobster", cursive;
+  text-align: left;
   font-size: 95px;
   font-style: normal;
   font-weight: 800;
@@ -114,4 +114,53 @@ nav {
 .Banner img {
   width: 85%;
   max-width: auto;
+}
+
+.We-are-gamer {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.We-are-gamer-img {
+  width: auto;
+}
+.We-are-gamer-text {
+  padding: 100px 50px 0px 0px;
+  text-align: right;
+}
+
+.We-are-gamer-text h3 {
+  font-family: "Lobster", cursive;
+  text-align: right;
+
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.We-are-gamer-text p {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.We-are-gamer button {
+  font-weight: 800;
+  font-style: normal;
+  font-size: medium;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
 }
