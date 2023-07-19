@@ -359,11 +359,18 @@ footer {
   nav {
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
   }
 
-  .Title-Nav,
+  .List-Nav ul {
+    justify-content: center;
+  }
+  .Title-Nav {
+    margin-right: 10px;
+    text-align: center;
+  }
   .List-Nav {
-    margin: 10px;
+    margin-right: -90px;
     text-align: center;
   }
   .Banner {
@@ -373,8 +380,10 @@ footer {
   .Banner-Images {
     order: 2;
   }
+
   .Banner-Images img {
     width: 100%;
+    height: auto;
     max-width: 576px;
   }
   .Banner-Title {
@@ -401,8 +410,14 @@ footer {
   }
 
   .We-are-gamer-text {
+    flex: 1;
     order: 1;
+    justify-content: center;
     text-align: center;
+  }
+  .We-are-gamer-img {
+    flex: 1;
+    order: 2;
   }
   .We-are-gamer-text h3 {
     text-align: center;
@@ -411,7 +426,6 @@ footer {
     text-align: center;
   }
   .We-are-gamer-img img {
-    order: 2;
     width: 100%;
     max-width: 576px;
   }
@@ -424,11 +438,52 @@ footer {
   }
 
   .Online-Games-Images-Showcase {
+    width: 576px;
+    height: 300px;
     margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .Image-Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+    border: 2px solid #ff42a5;
+  }
+  .Watch-Now-Container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .Watch-Now-Icon {
+    width: 0px;
+    margin-bottom: 10px;
+  }
+
+  .Watch-Now-Container p {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
   .Online-Games img {
-    max-width: 100%;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
   }
 
   .Play-Instantly-Title {
@@ -447,16 +502,44 @@ footer {
   .Games-Bar-1,
   .Games-Bar-2 {
     flex-direction: column;
+    align-items: center;
   }
 
   .Games-Bar-1 a,
   .Games-Bar-2 a {
     font-size: 14px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .Games-Bar-1 img,
   .Games-Bar-2 img {
     width: 10%;
+  }
+  footer {
+    padding: 10px 0;
+  }
+
+  .Footer-Title {
+    font-size: 20px;
+  }
+
+  .Footer-Tags {
+    display: flex;
+    padding-top: 10px;
+    gap: 20px;
+  }
+
+  .Footer-Icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    gap: 5px;
+  }
+
+  .Last-Line {
+    padding-top: 10px;
   }
 }
